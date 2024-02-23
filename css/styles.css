@@ -37,7 +37,7 @@ body {
     border: 1px solid var(--cornflower);
     border-radius: 4px;
     padding: 12px 24px;
-    width: 116px;
+    min-width: 116px;
     height: 48px;
     /*************/
     font-family: var(--font-family);
@@ -47,7 +47,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    color: var(--iris);}
+    color: var(--iris);
+    text-wrap: nowrap}
 .button:active {background-color: mediumspringgreen;}
 .button:hover,
 .button:focus {
@@ -85,7 +86,7 @@ body {
     font-size: 18px;
     /*line-height: 21px;*/ 
     line-height: 1.16667;
-    letter-spacing: 0.03em;
+    /*letter-spacing: 0.03em;*/
     text-transform: uppercase;
     color: var(--navy-blue);}
 .footer-text {font-family: var(--font-family);
