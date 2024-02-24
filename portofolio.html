@@ -20,13 +20,18 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header>
-      <p class="logo-text">
-        <span style="color: blue">WEB</span>
-        <span style="color: #120b0b">STUDIO</span>
-      </p>
+    <header style="display: flex">
       <nav class="header-menu">
-        <ul>
+        <ul
+          style="
+            display: flex;
+            list-style-type: none;
+            margin-block-start: 0;
+            justify-content: space-evenly;
+            width: 500px;
+          "
+        >
+          <li><div class="logo">STUDIO</div></li>
           <li><a class="link" href="index.html">Studio</a></li>
           <li><a class="link" href="portofolio.html">Portofolio</a></li>
           <li>
@@ -36,7 +41,7 @@
       </nav>
       <div class="header-contact">
         <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <p>+11 (000) 111-11-11</p>
+        <span>+11 (000) 111-11-11</span>
       </div>
     </header>
     <main>
@@ -138,10 +143,11 @@
       <!-- Footer Section -->
     </main>
     <footer>
-      <p class="logo-text">
+      <!--<p class="logo-text">
         <span style="color: blue">WEB</span>
         <span style="color: #120b0b">STUDIO</span>
-      </p>
+      </p> -->
+      <div class="logo">STUDIO</div>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
