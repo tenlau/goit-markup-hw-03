@@ -17,105 +17,128 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- <style>
+      ul {
+        list-style-type: none;
+      }
+    </style> -->
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <p class="logo-text">
-        <span style="color: blue">WEB</span>
-        <span style="color: #120b0b">STUDIO</span>
-      </p>
-      <nav  class="header-menu">
-        <ul>
-          <li><a class="link" href="index.html">Studio</a></li>
-          <li><a class="link" href="portofolio.html">Portofolio</a></li>
-          <li><a class="link" href="https://www.w3schools.com/">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-contact"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <p>+11 (000) 111-11-11</p></div>
-    </header>
     <main>
+      <!-- Header Section -->
+      <header style="display: flex">
+        <nav class="header-menu">
+          <ul
+            style="
+              display: flex;
+              list-style-type: none;
+              margin-block-start: 0;
+              justify-content: space-evenly;
+              width: 500px;
+            "
+          >
+            <li><div class="logo">STUDIO</div></li>
+            <li><a class="link" href="index.html">Studio</a></li>
+            <li><a class="link" href="portofolio.html">Portofolio</a></li>
+            <li>
+              <a class="link" href="https://www.w3schools.com/">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contact">
+          <a class="link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <span>+11 (000) 111-11-11</span>
+        </div>
+      </header>
       <!-- Section1 -->
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button class="button" type="button">Order Service</button>
+      <section class="section section1-background">
+        <div class="container(width=1200px)">
+          <h1>Effective Solutions for Your Business</h1>
+          <button class="button" type="button">Order Service</button>
+        </div>
       </section>
       <!-- Section2 -->
-      <section>
-        <ul>
-          <li class="card-title">Strategy</li>
-          <p class="card-description">
-            Our goal is to identify the business problem to walk away with the
-            perfect and creative solution.
-          </p>
-          <li class="card-title">Punctuality</li>
-          <p class="card-description">
-            Bring the key message to the brand's audience for the best price
-            within the shortest possible time.
-          </p>
-          <li class="card-title">Diligence</li>
-          <p class="card-description">
-            Research and confirm brands that present the strongest digital
-            growth opportunities and minimize risk.
-          </p>
-          <li class="card-title">Technologies</li>
-          <p class="card-description">
-            Design practice focused on digital experiences. We bring forth a
-            deep passion for problem-solving.
-          </p>
-        </ul>
+      <section class="section section2-background">
+        <div class="container(width=1200px)">
+          <ul class="list-type">
+            <li class="card-title">Strategy</li>
+            <p class="card-description">
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+            <li class="card-title">Punctuality</li>
+            <p class="card-description">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+            <li class="card-title">Diligence</li>
+            <p class="card-description">
+              Research and confirm brands that present the strongest digital
+              growth opportunities and minimize risk.
+            </p>
+            <li class="card-title">Technologies</li>
+            <p class="card-description">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </ul>
+        </div>
       </section>
       <!-- Section3 -->
-      <section>
-        <h2>What Are We Doing</h2>
-        <ul>
-          <li>
-            <img class="studio-images-section3" src="images/S2img1.jpg" />
-          </li>
-          <li>
-            <img class="studio-images-section3" src="images/S2img2.jpg" />
-          </li>
-          <li>
-            <img class="studio-images-section3" src="images/S2img3.jpg" />
-          </li>
-        </ul>
+      <section class="section section3-background">
+        <div class="container(width=1200px)">
+          <h2>What Are We Doing</h2>
+          <ul style="display: flex">
+            <li>
+              <img class="studio-images-section3" src="images/S2img1.jpg" />
+            </li>
+            <li>
+              <img class="studio-images-section3" src="images/S2img2.jpg" />
+            </li>
+            <li>
+              <img class="studio-images-section3" src="images/S2img3.jpg" />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Section4 -->
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
-            <img class="studio-images-section4" src="images/S3img1.jpg" />
-          </li>
-          <p class="card-title">Mark Guerero</p>
-          <p class="card-description">Product Designer</p>
-          <li>
-            <img class="studio-images-section4" src="images/S3img2.jpg" />
-          </li>
-          <p class="card-title">Tom Ford</p>
-          <p class="card-description">Frontend Developer</p>
-          <li>
-            <img class="studio-images-section4" src="images/S3img3.jpg" />
-          </li>
-          <p class="card-title">Camila Garcia</p>
-          <p class="card-description">Marketing</p>
-          <li>
-          <img class="studio-images-section4" src="images/S3img4.jpg" />
-          </li>
-          <p class="card-title">Daniel Wilson</p>
-          <p class="card-description">UI Designer</p>
-          </li>
-        </ul>
+      <section class="section section4-background">
+        <div class="container(width=1200px)">
+          <h2>Our Team</h2>
+          <ul style="display: flex">
+            <li>
+              <img class="studio-images-section4" src="images/S3img1.jpg" />
+            </li>
+            <p class="card-title">Mark Guerero</p>
+            <p class="card-description">Product Designer</p>
+            <li>
+              <img class="studio-images-section4" src="images/S3img2.jpg" />
+            </li>
+            <p class="card-title">Tom Ford</p>
+            <p class="card-description">Frontend Developer</p>
+            <li>
+              <img class="studio-images-section4" src="images/S3img3.jpg" />
+            </li>
+            <p class="card-title">Camila Garcia</p>
+            <p class="card-description">Marketing</p>
+            <li>
+              <img class="studio-images-section4" src="images/S3img4.jpg" />
+            </li>
+            <p class="card-title">Daniel Wilson</p>
+            <p class="card-description">UI Designer</p>
+          </ul>
+        </div>
       </section>
       <!-- Footer Section -->
     </main>
     <footer>
-      <p class="logo-text">
+      <!-- <p class="logo-text">
         <span style="color: blue">WEB</span>
         <span style="color: #120b0b">STUDIO</span>
-      </p>
+      </p> -->
+      <div class="logo">STUDIO</div>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
