@@ -1,153 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FullStackDeveloper-Tema3</title>
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <style>
-      ul {
-        list-style-type: none;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header style="display: flex">
-      <nav class="header-menu">
-        <ul
-          style="
-            display: flex;
-            margin-block-start: 0;
-            justify-content: space-evenly;
-            width: 500px;
-          "
-        >
-          <li><div class="logo">STUDIO</div></li>
-          <li><a class="link" href="index.html">Studio</a></li>
-          <li><a class="link" href="portofolio.html">Portofolio</a></li>
-          <li>
-            <a class="link" href="https://www.w3schools.com/">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header-contact">
-        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <span>+11 (000) 111-11-11</span>
-      </div>
-    </header>
-    <main>
-      <!-- Section1 -->
-      <section>
-        <div>
-          <h2 style="display: flex; justify-content: center">
-            Effective Solutions for Your Business
-          </h2>
-          <p style="display: flex; justify-content: center">
-            <button class="button" type="button">Order Service</button>
+    <div class="page-wrapper">
+      <!-- Header: Navigation bar -->
+      <header class="page-header visually-hidden">
+        <div class="container">
+          <nav>
+            <div class="logo">
+              <a href="/index.html"><span class="logo-text">Web</span>Studio</a>
+            </div>
+            <ul class="navigation">
+              <li><a href="/index.html" class="nav">Studio</a></li>
+              <li><a href="/portfolio.html" class="nav">Portfolio</a></li>
+              <li><a href="" class="nav">Contacts</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li>
+              <a href="emailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <!-- Hero section -->
+        <section>
+          <div class="hero">
+            <h1 class="title">Effective Solutions for Your Business</h1>
+            <button type="button" class="order-button button-text">
+              Order Service
+            </button>
+          </div>
+        </section>
+        <!-- Features section -->
+        <section class="section">
+          <div class="container features">
+            <ul class="card-set">
+              <li>
+                <h3 class="title-h3">Strategy</h3>
+                <p class="text">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </li>
+              <li>
+                <h3 class="title-h3">Punctuality</h3>
+                <p class="text">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </li>
+              <li>
+                <h3 class="title-h3">Diligence</h3>
+                <p class="text">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
+              <li>
+                <h3 class="title-h3">Technologies</h3>
+                <p class="text">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Section: What are we doing -->
+        <section class="wawd-section">
+          <h2 class="title-h2">What are we doing</h2>
+
+          <div class="container">
+            <img src="./images/website.jpg" alt="Website on PC" width="360" />
+            <img
+              src="./images/application.jpg"
+              alt="Website on Phone"
+              width="360"
+            />
+            <img
+              src="./images/sales-funel.jpg"
+              alt="Sales Funnel"
+              width="360"
+            />
+          </div>
+        </section>
+        <!-- Section: Our Team -->
+        <section>
+          <div class="our-team">
+            <h2 class="title-h2">Our Team</h2>
+            <div class="cards">
+              <div class="card team-card">
+                <img
+                  src="./images/markg.jpg"
+                  alt="Person respondible for Product Design"
+                  width="264"
+                />
+                <div class="body">
+                  <h3 class="title-h3">Mark Guerrero</h3>
+                  <p class="text">Product Designer</p>
+                </div>
+              </div>
+              <div class="card team-card">
+                <img
+                  src="./images/tomf.jpg"
+                  alt="Person respondible for Frontend Development"
+                  width="264"
+                />
+                <div class="body">
+                  <h3 class="title-h3">Tom Ford</h3>
+                  <p class="text">Frontend Developer</p>
+                </div>
+              </div>
+              <div class="card team-card">
+                <img
+                  src="./images/camilag.jpg"
+                  alt="Person respondible for Marketing"
+                  width="264"
+                />
+                <div class="body">
+                  <h3 class="title-h3">Camila Garcia</h3>
+                  <p class="text">Marketing</p>
+                </div>
+              </div>
+              <div class="card team-card">
+                <img
+                  src="./images/danielw.jpg"
+                  alt="Person respondible for UI Design"
+                  width="264"
+                />
+                <div class="body">
+                  <h3 class="title-h3">Daniel Wilson</h3>
+                  <p class="text">UI Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="logo">
+            <a href="/index.html"
+              ><span class="logo-text">Web</span
+              ><span class="dark-bkg">Studio</span></a
+            >
+          </div>
+          <p class="text dark-bkg">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
           </p>
         </div>
-      </section>
-      <!-- Section2 -->
-      <!--
-      <section style="justify-content: center; display: flex"> -->
-      <section>
-        <div style="display: flex; justify-content: center">
-          <ul>
-            <li class="card-title">Strategy</li>
-            <p class="card-description">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-            <li class="card-title">Punctuality</li>
-            <p class="card-description">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-            <li class="card-title">Diligence</li>
-            <p class="card-description">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-            <li class="card-title">Technologies</li>
-            <p class="card-description">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </ul>
-        </div>
-      </section>
-      <!-- Section3 -->
-      <section>
-        <div>
-          <h2 style="display: flex; justify-content: center">
-            What Are We Doing
-          </h2>
-          <ul style="display: flex; justify-content: center">
-            <li>
-              <img class="studio-images-section3" src="images/S2img1.jpg" />
-            </li>
-            <li>
-              <img class="studio-images-section3" src="images/S2img2.jpg" />
-            </li>
-            <li>
-              <img class="studio-images-section3" src="images/S2img3.jpg" />
-            </li>
-          </ul>
-        </divclass=>
-      </section>
-      <!-- Section4 -->
-      <section>
-        <div>
-          <h2 style="display: flex; justify-content: center">Our Team</h2>
-          <ul style="display: flex; justify-content: center">
-            <li>
-              <img class="studio-images-section4" src="images/S3img1.jpg" />
-            </li>
-            <p class="card-title">Mark Guerero</p>
-            <p class="card-description">Product Designer</p>
-            <li>
-              <img class="studio-images-section4" src="images/S3img2.jpg" />
-            </li>
-            <p class="card-title">Tom Ford</p>
-            <p class="card-description">Frontend Developer</p>
-            <li>
-              <img class="studio-images-section4" src="images/S3img3.jpg" />
-            </li>
-            <p class="card-title">Camila Garcia</p>
-            <p class="card-description">Marketing</p>
-            <li>
-              <img class="studio-images-section4" src="images/S3img4.jpg" />
-            </li>
-            <p class="card-title">Daniel Wilson</p>
-            <p class="card-description">UI Designer</p>
-          </ul>
-        </divclass=>
-      </section>
-      <!-- Footer Section -->
-    </main>
-    <footer>
-      <!-- <p class="logo-text">
-        <span style="color: blue">WEB</span>
-        <span style="color: #120b0b">STUDIO</span>
-      </p> -->
-      <div class="logo">STUDIO</div>
-      <p>
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
